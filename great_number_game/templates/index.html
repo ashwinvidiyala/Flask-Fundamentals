@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" type='text/css' href= "{{ url_for('static',filename='index.css') }}">
+  </head>
+  <body>
+    <h1>Welcome To The Great Number Game!</h1>
+    <p>I am thinking of a number between 1 and 100.</p>
+    <p>Take a guess.</p>
+    {% if 'user_number' not in session %}
+      <p></p>
+    {% elif session['user_number'] < session['random_number']%}
+      <h1>Too low</h1>
+    {% elif session['user_number'] > session['random_number']%}
+      <h1>Too high</h1>
+    {% elif session['user_number'] == session['random_number']%}
+      <h1>{{session['user_number']}} was the correct number!</h1>
+      <form action="/play_again" method="post">
+        <!-- <input type="hidden" name="play_again" value='play'> -->
+        <input type="submit" value="Play Again">
+      </form>
+    {% endif %}
+    <form action="/random" method="post">
+      <input type="text" name="number">
+      <input type="submit" value="submit">
+    </form>
+  </body>
+</html>

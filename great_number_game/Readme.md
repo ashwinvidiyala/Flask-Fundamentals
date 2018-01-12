@@ -4,7 +4,7 @@ Create a site that when a user loads it creates a random number between 1-100 an
 
 Finished assignment:
 
-![Great Number Game](static/great-number-game-1.png)
-![Great Number Game](static/great-number-game-2.png)
-![Great Number Game](static/great-number-game-3.png)
-![Great Number Game](static/great-number-game-4.png)
+![Great Number Game 1](static/great-number-game-1.png)
+![Great Number Game 2](static/great-number-game-2.png)
+![Great Number Game 3](static/great-number-game-3.png)
+![Great Number Game 4](static/great-number-game-4.png)

@@ -1,0 +1,10 @@
+.place {
+  display: inline-block;
+  border-radius: 3px;
+  border-color: black;
+  margin-right: 50px;
+}
+
+.green {
+  color: green;
+}
